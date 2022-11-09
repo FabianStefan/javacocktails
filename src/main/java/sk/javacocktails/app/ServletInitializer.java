@@ -1,4 +1,4 @@
-package sk.javacocktails;
+package sk.javacocktails.app;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
