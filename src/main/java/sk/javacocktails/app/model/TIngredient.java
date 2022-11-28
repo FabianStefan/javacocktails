@@ -15,8 +15,7 @@ import javax.persistence.Table;
 @Table(name = "t_ingredients", schema = "co")
 public class TIngredient implements Serializable {
 
-
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 5948148356783022313L;
 
 	@Id
 	@Column(name = "ingredient_id", nullable = false)
@@ -61,6 +60,10 @@ public class TIngredient implements Serializable {
 		TIngredient other = (TIngredient) obj;
 		return Objects.equals(ingredientId, other.ingredientId) && Objects.equals(name, other.name);
 	}
-	
+
+	@Override
+	public String toString() {
+		return "TIngredient [ingredientId=" + ingredientId + ", name=" + name + "]";
+	}
 	
 }

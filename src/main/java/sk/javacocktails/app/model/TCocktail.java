@@ -14,8 +14,8 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "t_cocktails", schema = "co")
 public class TCocktail implements Serializable {
-	
-	private static final long serialVersionUID = 1L;
+
+	private static final long serialVersionUID = 7316022775569242958L;
 
 	@Id
 	@Column(name = "cocktail_id", nullable = false)
@@ -73,6 +73,13 @@ public class TCocktail implements Serializable {
 		return Objects.equals(cocktailId, other.cocktailId) && Objects.equals(name, other.name)
 				&& Objects.equals(url, other.url);
 	}
+
+	@Override
+	public String toString() {
+		return "TCocktail [cocktailId=" + cocktailId + ", name=" + name + ", url=" + url + "]";
+	}
+	
+	
 	
 	
 }
